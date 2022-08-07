@@ -2,6 +2,11 @@
   position: fixed;
   width: 100%;
   background: linear-gradient(180deg, $color-default-black 84.9%, rgba(4, 24, 39, 0) 100%);
+
+  @include vp-1023 {
+    position: initial;
+    z-index: 1;
+  }
 }
 
 .header__wrapper {

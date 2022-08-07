@@ -957,6 +957,43 @@ button,
   display: none;
 }
 
+.main-screen {
+  padding: 180px 0 295px 125px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/board@1x.jpg") 75% 95% no-repeat;
+  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/board@1x.jpg") 75% 95% no-repeat;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/board@1x.jpg") 75% 95% no-repeat;
+}
+
+.main-screen__title {
+  margin: 0 0 40px;
+  font-size: 80px;
+  line-height: 94px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main-screen__description {
+  margin: 0 0 40px;
+  width: 685px;
+  font-family: "PT-Mono", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.main-screen__link {
+  display: block;
+  width: 410px;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f2f5f6;
+  background-color: #00b2ff;
+  border-radius: 3px;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -967,6 +1004,11 @@ button,
 @media (max-width: 1023px) {
   .container {
     padding: 0 50px;
+  }
+
+  .header {
+    position: initial;
+    z-index: 1;
   }
 
   .header__wrapper {
@@ -1030,6 +1072,21 @@ button,
 
   .footer-contacts {
     justify-self: flex-end;
+  }
+
+  .main-screen {
+    margin-top: -15px;
+    padding: 95px 0 205px;
+  }
+
+  .main-screen__title {
+    margin: 0 0 20px;
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  .main-screen__description {
+    margin: 0 0 50px;
   }
 }
 
@@ -1302,5 +1359,28 @@ button,
 
   .footer-contacts__btn-show-more--js-none {
     display: none;
+  }
+
+  .main-screen {
+    padding: 95px 0 190px;
+  }
+
+  .main-screen__title {
+    width: 185px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .main-screen__description {
+    width: 265px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .main-screen__link {
+    width: 270px;
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 16px;
   }
 }
