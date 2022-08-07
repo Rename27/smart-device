@@ -5,13 +5,12 @@
 
 $color-default-black:               #041827;
 $color-default-white:               #f2f5f6;
-$color-basic-white:                 #ffffff;
+$color-alternative-white:                 #ffffff;
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
 $color-deep-sky-blue:               #00b2ff;
-$color-torch-red:                   #ff1553;
 
 // Gradient
 
@@ -23,7 +22,9 @@ $black-to-right:                    linear-gradient(180deg, #041827 84.9%, rgba(
 // переменная используемая в html для подключения скейлинга
 $fz-default:                        16px;
 
-$ff-placeholder:                    "Robot-Condensed", "Arial", sans-serif;
+$ff-default:                                  "Robot", "Arial", sans-serif;
+$ff-default-condensed:                        "Robot-Condensed", "Arial", sans-serif;
+$ff-alternative:                              "PT-Mono", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------

@@ -1,0 +1,27 @@
+.social-network {
+  padding-left: 10px;
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.social-network__list {
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @include vp-767 {
+    margin: 0 0 25px;
+  }
+}
+
+.social-network__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,126 @@
+.footer-contacts {
+  @include vp-1023 {
+    justify-self: flex-end;
+  }
+
+  @include vp-767 {
+    position: relative;
+    justify-self: auto;
+    padding: 20px 0;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      right: -25px;
+      left: -25px;
+      height: 1px;
+      background-color: rgba($color-default-white, 0.7);
+      content: "";
+    }
+  }
+}
+
+.footer-contacts__title {
+  margin: 0 0 20px;
+  padding: 5px 0 0 0;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  @include vp-767 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.footer-contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-767 {
+    display: none;
+    padding-top: 15px;
+
+    &--js-none {
+      display: block;
+      padding-top: 15px;
+    }
+  }
+}
+
+.footer-contacts__item {
+  margin: 0 0 5px;
+  width: 345px;
+}
+
+.footer-contacts a {
+  font-family: $ff-alternative;
+  color: rgba($color-alternative-white, 0.7);
+}
+
+.footer-contacts__btn-show-more {
+  display: none;
+
+  &--is-close {
+    @include vp-767 {
+      display: block;
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      top: 25px;
+      right: 0;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+
+      &::before,
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 1px;
+        width: 15px;
+        background-color: #f2f5f6;
+        transform: translate(-50%, -50%);
+        content: "";
+      }
+
+      &::after {
+        width: 1px;
+        height: 15px;
+      }
+    }
+  }
+
+  &--is-open {
+    @include vp-767 {
+      display: block;
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      top: 25px;
+      right: 0;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+
+      &::before {
+        position: absolute;
+        height: 1px;
+        width: 15px;
+        background-color: #f2f5f6;
+        transform: translate(-50%, -50%);
+        content: "";
+      }
+    }
+  }
+
+  @include vp-767 {
+    &--js-none {
+      display: none;
+    }
+  }
+}

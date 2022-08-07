@@ -1,3 +1,5 @@
+import './modules/show-more.js';
+
 window.addEventListener('DOMContentLoaded', () => {
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
