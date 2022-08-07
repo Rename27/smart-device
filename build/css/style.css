@@ -957,6 +957,43 @@ button,
   display: none;
 }
 
+.main-screen {
+  padding: 180px 0 295px 125px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/board@1x.jpg") 75% 95% no-repeat;
+  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/board@1x.jpg") 75% 95% no-repeat;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/board@1x.jpg") 75% 95% no-repeat;
+}
+
+.main-screen__title {
+  margin: 0 0 40px;
+  font-size: 80px;
+  line-height: 94px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main-screen__description {
+  margin: 0 0 40px;
+  width: 685px;
+  font-family: "PT-Mono", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.main-screen__link {
+  display: block;
+  width: 410px;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f2f5f6;
+  background-color: #00b2ff;
+  border-radius: 3px;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
