@@ -1,0 +1,35 @@
+.contacts__list {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-1023 {
+    gap: 20px;
+  }
+}
+
+.contacts__link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  min-width: 225px;
+  color: $color-default-white;
+
+  @include vp-1023 {
+    min-width: 40px;
+    min-height: 40px;
+  }
+}
+
+.contacts__link span {
+  font-family: $ff-alternative;
+  font-size: 16px;
+  line-height: 18px;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
