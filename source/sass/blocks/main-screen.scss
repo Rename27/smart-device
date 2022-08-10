@@ -1,6 +1,7 @@
 .main-screen {
   padding: 180px 0 295px 125px;
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/board@1x.jpg") 75% 95% no-repeat;
+  background-size: cover;
 
   @include vp-1023 {
     margin-top: -15px;
