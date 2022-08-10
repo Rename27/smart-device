@@ -4,11 +4,17 @@ const navContainer = document.querySelector('.nav__wrapper');
 const footerContactsBtnShowMore = document.querySelector('.footer-contacts__btn-show-more');
 const footerContactsContainer = document.querySelector('.footer-contacts__list');
 
+const aboutDescriptionsContainer = document.querySelector('.about__descriptions');
+const aboutBtnShowMore = document.querySelector('.about__wrapper button');
+
 navBtnShowMore.classList.remove('nav__btn-show-more--js-none');
 navContainer.classList.remove('nav__wrapper--js-none');
 
 footerContactsBtnShowMore.classList.remove('footer-contacts__btn-show-more--js-none');
 footerContactsContainer.classList.remove('footer-contacts__list--js-none');
+
+aboutDescriptionsContainer.classList.remove('about__descriptions--show-more');
+aboutBtnShowMore.style.display = 'block';
 
 
 const navShowMore = () => {
@@ -45,5 +51,16 @@ const footerContactsShowMore = () => {
   }
 };
 
+const aboutDescriptionShowMore = () => {
+  if (aboutDescriptionsContainer.classList.contains('about__descriptions--show-more')) {
+    aboutDescriptionsContainer.classList.remove('about__descriptions--show-more');
+    aboutBtnShowMore.textContent = 'Подробнее';
+  } else {
+    aboutDescriptionsContainer.classList.add('about__descriptions--show-more');
+    aboutBtnShowMore.textContent = 'Скрыть';
+  }
+};
+
 navBtnShowMore.addEventListener('click', navShowMore);
 footerContactsBtnShowMore.addEventListener('click', footerContactsShowMore);
+aboutBtnShowMore.addEventListener('click', aboutDescriptionShowMore);
