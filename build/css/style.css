@@ -1060,6 +1060,58 @@ button,
   line-height: 22px;
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 100px;
+  -moz-column-gap: 100px;
+  column-gap: 100px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.about img {
+  height: 320px;
+}
+
+.about h1 {
+  margin: 0 0 15px;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.about p {
+  margin: 0 0 30px;
+  font-family: "PT-Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  display: none;
+}
+
+.about p:nth-child(-n+2) {
+  display: block;
+}
+
+.about__descriptions--show-more p {
+  display: block;
+}
+
+.about button {
+  display: none;
+  padding: 14px 0 8px;
+  width: 180px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #00b2ff;
+  background-color: transparent;
+  border: 1px solid #00b2ff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1166,6 +1218,11 @@ button,
 
   .advantages li {
     min-height: 360px;
+  }
+
+  .about {
+    padding-top: 40px;
+    padding-bottom: 80px;
   }
 }
 
@@ -1484,5 +1541,14 @@ button,
   .advantages p {
     font-size: 14px;
     line-height: 19px;
+  }
+
+  .about {
+    padding-top: 25px;
+    padding-bottom: 80px;
+  }
+
+  .about img {
+    display: none;
   }
 }
