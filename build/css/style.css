@@ -1221,7 +1221,6 @@ button,
   padding-bottom: 250px;
   background: -o-linear-gradient(314deg, #0d5184 33%, #00b2ff 33% 100%);
   background: linear-gradient(136deg, #0d5184 33%, #00b2ff 33% 100%);
-  font-family: "PT-Mono", "Arial", sans-serif;
   color: #ffffff;
 }
 
@@ -1362,16 +1361,6 @@ button,
   align-items: center;
 }
 
-.feedback__form-wrapper label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 10px;
-}
-
 .feedback__form-wrapper button {
   padding: 15px 0;
   max-width: 265px;
@@ -1382,6 +1371,16 @@ button,
   border: none;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.feedback__form-wrapper label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .feedback__form-wrapper input {
@@ -1418,6 +1417,8 @@ button,
 }
 
 .feedback__form-wrapper span {
+  max-width: 200px;
+  font-family: "PT-Mono", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   opacity: 0.8;
@@ -1578,11 +1579,25 @@ button,
   }
 
   .feedback {
+    padding-top: 50px;
+    padding-bottom: 125px;
     background: #00b2ff;
   }
 
   .feedback__wrapper img {
     display: none;
+  }
+
+  .feedback__form {
+    width: 100%;
+  }
+
+  .feedback__form h2 {
+    margin: 0 0 10px;
+  }
+
+  .feedback__form p {
+    margin: 0 0 25px;
   }
 }
 
@@ -1939,5 +1954,52 @@ button,
 
   .product h3 {
     padding: 30px 0 0 30px;
+  }
+
+  .feedback {
+    padding-bottom: 90px;
+  }
+
+  .feedback__form h2 {
+    margin: 0 0 20px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .feedback__form p {
+    margin: 0 0 40px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .feedback__form ul {
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+  }
+
+  .feedback__form li:last-child {
+    grid-column: initial;
+  }
+
+  .feedback__form textarea {
+    margin: 0 0 30px;
+  }
+
+  .feedback__form-wrapper {
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    -webkit-box-pack: stretch;
+    -ms-flex-pack: stretch;
+    justify-content: stretch;
+    gap: 40px;
+  }
+
+  .feedback__form-wrapper button {
+    max-width: none;
+  }
+
+  .feedback__form-wrapper label {
+    -ms-grid-column-align: center;
+    justify-self: center;
   }
 }
