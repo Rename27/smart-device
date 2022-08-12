@@ -1,4 +1,5 @@
 import './modules/show-more.js';
+import './modules/modals/modal';
 
 window.addEventListener('DOMContentLoaded', () => {
 

@@ -300,11 +300,39 @@
     </footer>
   </div>
 
-  <div class="modal">
-    <div class="modal__wrapper">
-      <div class="modal__overlay"></div>
-      <div class="modal__content">
-
+  <div class="popup">
+    <div class="popup__wrapper">
+      <div class="popup__overlay"></div>
+      <div class="popup__content">
+        <button class="popup__close-btn" type="button"></button>
+        <form class="popup__form" method="get" action="https://echo.htmlacademy.ru">
+          <h2>Закажите звонок!</h2>
+          <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+          <ul>
+            <li>
+              <label>
+                <input type="text" name="name" placeholder="Имя" autocomplete="off" autofocus required>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="text" name="phone" placeholder="Телефон" autocomplete="off" required>
+              </label>
+            </li>
+            <li>
+              <label>
+                <textarea name="question" placeholder="Ваш вопрос"></textarea>
+              </label>
+            </li>
+          </ul>
+          <div class="popup__form-wrapper">
+            <button type="submit">Отправить</button>
+            <label>
+              <input type="checkbox" name="personal-data" required>
+              <span>Я согласен на обработку персональных данных</span>
+            </label>
+          </div>
+        </form>
       </div>
     </div>
   </div>
