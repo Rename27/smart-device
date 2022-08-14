@@ -66,9 +66,9 @@ document.addEventListener('DOMContentLoaded', () => {
       evt.target.value = '';
     }
   };
-  for (const phoneInput of phoneInputs) {
+  phoneInputs.forEach((phoneInput) => {
     phoneInput.addEventListener('keydown', onPhoneKeyDown);
     phoneInput.addEventListener('input', onPhoneInput, false);
     phoneInput.addEventListener('paste', onPhonePaste, false);
-  }
+  });
 });
