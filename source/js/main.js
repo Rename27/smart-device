@@ -1,5 +1,6 @@
 import './modules/show-more.js';
-import './modules/modals/modal';
+import './modules/modals/modal.js';
+import './modules/phone-input.js';
 
 window.addEventListener('DOMContentLoaded', () => {
 
