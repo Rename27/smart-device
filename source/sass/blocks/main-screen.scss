@@ -1,41 +1,55 @@
 .main-screen {
-  padding: 180px 0 295px 125px;
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/board@1x.jpg") 75% 95% no-repeat;
+  padding: 305px 0 282px 250px;
+  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/board@1x.jpg");
+  background-position: 50%;
   background-size: cover;
+  background-repeat: no-repeat;
+
+  @include retina {
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/board@2x.jpg");
+  }
 
   @include vp-1023 {
     margin-top: -15px;
-    padding: 95px 0 205px;
+    padding: 95px 0 207px;
+    background-position: 20% 61%;
+    background-size: 183%;
   }
 
   @include vp-767 {
-    padding: 95px 0 190px;
+    padding: 90px 0 192px;
+    background-position: 25% 59%;
+    background-size: 378%;
   }
 }
 
 .main-screen__title {
-  margin: 0 0 40px;
+  margin: 0 0 33px;
   font-size: 80px;
   line-height: 94px;
   font-weight: 700;
+  letter-spacing: 6px;
   text-transform: uppercase;
   color: $color-default-white;
 
   @include vp-1023 {
-    margin: 0 0 20px;
+    margin: 0;
     font-size: 64px;
     line-height: 75px;
+    letter-spacing: 5px;
   }
 
   @include vp-767 {
+    margin: 0 0 7px;
     width: 185px;
     font-size: 36px;
     line-height: 42px;
+    letter-spacing: 3px;
   }
 }
 
 .main-screen__description {
-  margin: 0 0 40px;
+  margin: 0 0 47px;
   width: 685px;
   font-family: $ff-alternative;
   font-size: 22px;
@@ -43,11 +57,12 @@
   color: $color-default-white;
 
   @include vp-1023 {
-    margin: 0 0 50px;
+    margin: 0 0 59px;
   }
 
   @include vp-767 {
-    width: 265px;
+    margin: 0 0 46px;
+    max-width: 265px;
     font-size: 14px;
     line-height: 22px;
   }
@@ -61,15 +76,49 @@
   font-size: 18px;
   line-height: 21px;
   font-weight: 700;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: $color-default-white;
   background-color: $color-deep-sky-blue;
   border-radius: 3px;
 
+  @include vp-1023 {
+    margin: 0 0 0 45px;
+  }
+
   @include vp-767 {
-    width: 270px;
+    margin: 0;
     padding: 10px 0;
+    width: auto;
+    max-width: 270px;
     font-size: 14px;
     line-height: 16px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: 2px solid $color-default-white;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.4;
+  }
+}
+
+.main-screen span {
+  &:last-of-type {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: none;
+
+    &:last-of-type {
+      display: block;
+    }
   }
 }

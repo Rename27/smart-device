@@ -16,4 +16,21 @@
   border: 1px solid $color-default-white;
   border-radius: 3px;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus {
+    outline: 2px solid $color-default-white;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.4;
+  }
 }

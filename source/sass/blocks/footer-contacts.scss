@@ -25,6 +25,7 @@
   padding: 5px 0 0 0;
   font-size: 15px;
   line-height: 16px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: $color-alternative-white;
 
@@ -41,7 +42,7 @@
 
   @include vp-767 {
     display: none;
-    padding-top: 15px;
+    padding-top: 17px;
 
     &--js-none {
       display: block;
@@ -53,11 +54,41 @@
 .footer-contacts__item {
   margin: 0 0 5px;
   max-width: 345px;
+
+  @include vp-767 {
+    margin: 0 0 6px;
+  }
 }
 
 .footer-contacts a {
   font-family: $ff-alternative;
   color: rgba($color-alternative-white, 0.7);
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: 2px solid $color-default-white;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.4;
+  }
+}
+
+.footer-contacts address {
+  font-style: normal;
+
+  @include vp-767 {
+    margin: 0 0 18px;
+  }
 }
 
 .footer-contacts__btn-show-more {
@@ -69,7 +100,7 @@
       position: absolute;
       height: 15px;
       width: 15px;
-      top: 25px;
+      top: 27px;
       right: 0;
       transform: translateY(-50%);
       background: transparent;
@@ -101,7 +132,7 @@
       position: absolute;
       height: 15px;
       width: 15px;
-      top: 25px;
+      top: 27px;
       right: 0;
       transform: translateY(-50%);
       background: transparent;

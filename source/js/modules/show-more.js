@@ -66,7 +66,6 @@ const aboutDescriptionShowMore = () => {
     aboutDescriptionsContainer.classList.remove('about__descriptions--show-more');
     aboutBtnShowMore.textContent = 'Подробнее';
   } else {
-
     aboutDescriptionsContainer.classList.add('about__descriptions--show-more');
     aboutBtnShowMore.textContent = 'Скрыть';
   }

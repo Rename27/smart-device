@@ -31,6 +31,8 @@
   padding: 5px 0 0 0;
   font-size: 15px;
   line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: $color-alternative-white;
 
@@ -69,12 +71,29 @@
 .nav__item {
   margin: 0 0 7px 0;
   width: 220px;
+
+  @include vp-1023 {
+    margin: 0 0 5px;
+  }
 }
 
 .nav__link {
   font-family: $ff-alternative;
   line-height: 135%;
   color: rgba($color-alternative-white, 0.7);
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: 2px solid $color-default-white;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.4;
+  }
 }
 
 .nav__btn-show-more {
@@ -86,7 +105,7 @@
       position: absolute;
       height: 15px;
       width: 15px;
-      top: 25px;
+      top: 27px;
       right: 0;
       transform: translateY(-50%);
       background: transparent;
@@ -118,7 +137,7 @@
       position: absolute;
       height: 15px;
       width: 15px;
-      top: 25px;
+      top: 27px;
       right: 0;
       transform: translateY(-50%);
       background: transparent;

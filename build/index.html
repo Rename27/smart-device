@@ -19,6 +19,7 @@
             <div class="logo__wrapper">
               <svg width="55" height="55">
                 <use xlink:href="img/sprite_auto.svg#identic"></use>
+                <span class="visually-hidden">Логотип Smart Device</span>
               </svg>
               <div class="logo__text">
                 <span class="logo__title">Smart Device</span>
@@ -33,6 +34,7 @@
               <a class="contacts__link" href="mailto:info@sd.ru">
                 <svg width="20" height="20">
                   <use xlink:href="img/sprite_auto.svg#email"></use>
+                  <span class="visually-hidden">Электронная почта</span>
                 </svg>
                 <span>info@sd.ru</span>
               </a>
@@ -41,6 +43,7 @@
               <a class="contacts__link" href="tel:+74950005252">
                 <svg width="20" height="20">
                   <use xlink:href="img/sprite_auto.svg#phone"></use>
+                  <span class="visually-hidden">Телефон</span>
                 </svg>
                 <span>+7 (495) 000 52 52</span>
               </a>
@@ -58,7 +61,10 @@
         <div class="container">
           <h1 class="main-screen__title">Печатные платы</h1>
           <h2 class="main-screen__description">производство и монтаж, поставка комплектующих, блоков и модулей</h2>
-          <a class="main-screen__link" href="">Получить бесплатную консультацию</a>
+          <a class="main-screen__link" href="#feedback">
+            <span>Получить бесплатную консультацию</span>
+            <span>Бесплатная консультация</span>
+          </a>
         </div>
       </section>
       <section class="main__advantages advantages container">
@@ -67,14 +73,16 @@
           <li>
             <svg width="35" height="35">
               <use xlink:href="img/sprite_auto.svg#stopwatch"></use>
+              <span class="visually-hidden">Таймер</span>
             </svg>
             <h2>Оперативные сроки</h2>
             <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять
               заказы плат и комплектующих в самые короткие сроки</p>
           </li>
-          <li class="advantages__item">
+          <li>
             <svg width="35" height="35">
               <use xlink:href="img/sprite_auto.svg#suppliers"></use>
+              <span class="visually-hidden">Поставщики</span>
             </svg>
             <h2>Крупные поставщики</h2>
             <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
@@ -84,6 +92,7 @@
           <li>
             <svg width="35" height="35">
               <use xlink:href="img/sprite_auto.svg#privacy"></use>
+              <span class="visually-hidden">Конфиденциальность</span>
             </svg>
             <h2>Полная конфиденциальность</h2>
             <p>По желанию клиента мы обеспечиваем полную конфеденциальность.
@@ -92,6 +101,7 @@
           <li>
             <svg width="35" height="35">
               <use xlink:href="img/sprite_auto.svg#price"></use>
+              <span class="visually-hidden">Ценник</span>
             </svg>
             <h2>Персонализация стоимости</h2>
             <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
@@ -101,17 +111,22 @@
         </ul>
       </section>
       <section class="main__about about container">
-        <img src="img/year@1x.png" alt="2020 год" width="150" height="320">
+        <picture>
+          <source type="image/webp" srcset="
+          img/year@1x.webp 1x,
+          img/year@2x.webp 2x">
+          <!-- 1х: 150px; 2x: 300px -->
+          <img src="img/year@1x.png" srcset="img/year@2x.png" alt="2020 год" width="150" height="320">
+        </picture>
         <div class="about__wrapper">
           <h1>О компании</h1>
           <div class="about__descriptions about__descriptions--show-more">
             <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
               1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-            <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-              Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог
-              (РЖД),
-              РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
-              светотехники России.</p>
+            <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC,
+              REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских
+              Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов
+              крупнейшие Производители светотехники России.</p>
             <p>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых
               продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20
               городов присутствия.</p>
@@ -162,11 +177,18 @@
           </div>
         </div>
       </section>
-      <section class="main__feedback feedback">
+      <section class="main__feedback feedback" id="feedback">
         <h1 class="visually-hidden">Обратная связь</h1>
         <div class="container">
           <div class="feedback__wrapper">
-            <img src="img/paper-airplane@1x.png" alt="" width="510" height="285">
+            <picture>
+              <source type="image/webp" srcset="
+              img/paper-airplane@1x.webp 1x,
+              img/paper-airplane@2x.webp 2x">
+              <!-- 1х: 510px; 2x: 1020px -->
+              <img src="img/paper-airplane@1x.png" srcset="img/paper-airplane@2x.png" alt="Бумажный самолёт" width="510"
+                height="285">
+            </picture>
             <form class="feedback__form" method="get" action="https://echo.htmlacademy.ru">
               <h2>Остались вопросы? Задайте их нам!</h2>
               <p>Мы проконсультируем Вас бесплатно</p>
@@ -207,6 +229,7 @@
               <div class="logo__wrapper">
                 <svg width="55" height="55">
                   <use xlink:href="img/sprite_auto.svg#identic"></use>
+                  <span class="visually-hidden">Логотип Smart Device</span>
                 </svg>
                 <div class="logo__text">
                   <span class="logo__title">Smart Device</span>
@@ -218,23 +241,26 @@
           <div class="footer__social-network social-network">
             <ul class="social-network__list">
               <li class="social-network__item">
-                <a class="social-network__link" href="">
-                  <svg width="40" height="40">
+                <a class="social-network__link" href="#">
+                  <svg width="30" height="30">
                     <use xlink:href="img/sprite_auto.svg#pinterest"></use>
+                    <span class="visually-hidden">Pinterest</span>
                   </svg>
                 </a>
               </li>
               <li class="social-network__item">
-                <a class="social-network__link" href="">
-                  <svg width="40" height="40">
+                <a class="social-network__link" href="#">
+                  <svg width="30" height="30">
                     <use xlink:href="img/sprite_auto.svg#ok"></use>
+                    <span class="visually-hidden">Мы в Одноклассниках</span>
                   </svg>
                 </a>
               </li>
               <li class="social-network__item">
-                <a class="social-network__link" href="">
-                  <svg width="40" height="40">
+                <a class="social-network__link" href="#">
+                  <svg width="30" height="30">
                     <use xlink:href="img/sprite_auto.svg#vk"></use>
+                    <span class="visually-hidden">Мы во Вконтакте</span>
                   </svg>
                 </a>
               </li>
@@ -311,7 +337,7 @@
           <ul>
             <li>
               <label>
-                <input type="text" name="name" placeholder="Имя" autocomplete="off" autofocus required>
+                <input type="text" name="name" placeholder="Имя" autocomplete="off" required>
               </label>
             </li>
             <li>

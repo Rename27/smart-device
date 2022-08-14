@@ -1,20 +1,17 @@
-.social-network {
-  padding-left: 10px;
-
-  @include vp-767 {
-    padding: 0;
-  }
-}
-
 .social-network__list {
   display: flex;
-  gap: 15px;
-  list-style-type: none;
+  gap: 27px;
   margin: 0;
-  padding: 0;
+  padding: 5px 12px;
+  list-style-type: none;
+
+  @include vp-1023 {
+    gap: 25px;
+    padding: 10px 0;
+  }
 
   @include vp-767 {
-    margin: 0 0 25px;
+    margin: 0 0 20px;
   }
 }
 
@@ -22,6 +19,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: 2px solid $color-default-white;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.4;
+  }
 }

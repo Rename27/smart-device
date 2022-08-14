@@ -1,12 +1,13 @@
 .contacts__list {
   display: flex;
   gap: 30px;
-  margin: 0;
+  margin: 0 0 0 30px;
   padding: 0;
   list-style-type: none;
 
   @include vp-1023 {
     gap: 20px;
+    margin: 0;
   }
 }
 
@@ -19,6 +20,8 @@
   color: $color-default-white;
 
   @include vp-1023 {
+    align-items: center;
+    justify-content: center;
     min-width: 40px;
     min-height: 40px;
   }
