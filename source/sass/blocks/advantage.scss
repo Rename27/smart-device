@@ -13,7 +13,7 @@
   }
 }
 
-.advantages ul {
+.advantages__list {
   display: grid;
   grid-template-columns: repeat(auto-fill, 595px);
   justify-content: center;
@@ -31,7 +31,7 @@
   }
 }
 
-.advantages li {
+.advantages__item {
   padding: 40px 40px 20px 40px;
   min-height: 300px;
   border: 1px solid #ebebeb;
