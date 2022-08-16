@@ -1076,7 +1076,7 @@ button,
   padding-bottom: 80px;
 }
 
-.advantages ul {
+.advantages__list {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fill, 595px);
@@ -1089,26 +1089,26 @@ button,
   list-style-type: none;
 }
 
-.advantages li {
+.advantages__item {
   padding: 40px 40px 20px 40px;
   min-height: 300px;
   border: 1px solid #ebebeb;
   border-left: 5px solid #00b2ff;
 }
 
-.advantages li:hover {
+.advantages__item:hover {
   background-color: #00b2ff;
 }
 
-.advantages li:hover svg {
+.advantages__item:hover svg {
   fill: #f2f5f6;
 }
 
-.advantages li:hover h2 {
+.advantages__item:hover h2 {
   color: #f2f5f6;
 }
 
-.advantages li:hover p {
+.advantages__item:hover p {
   color: #f2f5f6;
 }
 
@@ -1995,11 +1995,11 @@ button,
     padding-bottom: 40px;
   }
 
-  .advantages ul {
+  .advantages__list {
     grid-template-columns: repeat(auto-fill, 320px);
   }
 
-  .advantages li {
+  .advantages__item {
     min-height: 360px;
   }
 
@@ -2472,11 +2472,11 @@ button,
     padding-bottom: 25px;
   }
 
-  .advantages ul {
+  .advantages__list {
     grid-template-columns: repeat(auto-fill, 270px);
   }
 
-  .advantages li {
+  .advantages__item {
     min-height: 340px;
     padding: 30px 25px 30px;
   }
