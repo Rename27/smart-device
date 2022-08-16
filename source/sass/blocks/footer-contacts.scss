@@ -25,6 +25,7 @@
   padding: 5px 0 0 0;
   font-size: 15px;
   line-height: 16px;
+  font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: $color-alternative-white;
@@ -43,6 +44,14 @@
   @include vp-767 {
     display: none;
     padding-top: 17px;
+
+    &--is-open {
+      display: block;
+    }
+
+    &--is-close {
+      display: none;
+    }
 
     &--js-none {
       display: block;

@@ -16,47 +16,16 @@
   gap: 15px;
 }
 
-.logo__wrapper svg {
-  @include vp-767 {
-    width: 35px;
-    height: 35px;
-  }
-}
-
-.logo__text {
-  display: flex;
-  flex-direction: column;
-
+.logo__svg {
   @include vp-767 {
     display: none;
   }
-}
 
-.logo__title {
-  font-size: 25px;
-  line-height: 29px;
-  font-weight: 700;
-}
+  &--mobile {
+    display: none;
 
-.logo__description {
-  font-family: $ff-default;
-  font-size: 12px;
-  line-height: 14px;
-  color: rgba($color-alternative-white, 0.7);
-}
-
-
-.logo--footer {
-  .logo__text {
     @include vp-767 {
-      display: flex;
-    }
-  }
-
-  .logo__wrapper svg {
-    @include vp-767 {
-      width: 55px;
-      height: 55px;
+      display: block;
     }
   }
 }

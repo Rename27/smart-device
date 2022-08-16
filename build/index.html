@@ -15,16 +15,15 @@
     <header class="header">
       <div class="header__wrapper container">
         <div class="header__logo logo">
-          <a class="logo__link" href="">
+          <a class="logo__link" href="#">
             <div class="logo__wrapper">
-              <svg width="55" height="55">
+              <svg class="logo__svg" width="215" height="55">
                 <use xlink:href="img/sprite_auto.svg#identic"></use>
-                <span class="visually-hidden">Логотип Smart Device</span>
               </svg>
-              <div class="logo__text">
-                <span class="logo__title">Smart Device</span>
-                <span class="logo__description">умные технологии</span>
-              </div>
+              <svg class="logo__svg logo__svg--mobile" width="35" height="35">
+                <use xlink:href="img/sprite_auto.svg#identic-mobile"></use>
+              </svg>
+              <span class="visually-hidden">Логотип Smart Device</span>
             </div>
           </a>
         </div>
@@ -34,8 +33,8 @@
               <a class="contacts__link" href="mailto:info@sd.ru">
                 <svg width="20" height="20">
                   <use xlink:href="img/sprite_auto.svg#email"></use>
-                  <span class="visually-hidden">Электронная почта</span>
                 </svg>
+                <span class="visually-hidden">Электронная почта</span>
                 <span>info@sd.ru</span>
               </a>
             </li>
@@ -43,8 +42,8 @@
               <a class="contacts__link" href="tel:+74950005252">
                 <svg width="20" height="20">
                   <use xlink:href="img/sprite_auto.svg#phone"></use>
-                  <span class="visually-hidden">Телефон</span>
                 </svg>
+                <span class="visually-hidden">Телефон</span>
                 <span>+7 (495) 000 52 52</span>
               </a>
             </li>
@@ -71,38 +70,46 @@
         <h1 class="visually-hidden">Преимущества</h1>
         <ul>
           <li>
-            <svg width="35" height="35">
-              <use xlink:href="img/sprite_auto.svg#stopwatch"></use>
+            <div>
+              <svg width="35" height="35">
+                <use xlink:href="img/sprite_auto.svg#stopwatch"></use>
+              </svg>
               <span class="visually-hidden">Таймер</span>
-            </svg>
+            </div>
             <h2>Оперативные сроки</h2>
             <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять
               заказы плат и комплектующих в самые короткие сроки</p>
           </li>
           <li>
-            <svg width="35" height="35">
-              <use xlink:href="img/sprite_auto.svg#suppliers"></use>
+            <div>
+              <svg width="35" height="35">
+                <use xlink:href="img/sprite_auto.svg#suppliers"></use>
+              </svg>
               <span class="visually-hidden">Поставщики</span>
-            </svg>
+            </div>
             <h2>Крупные поставщики</h2>
             <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
               Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
             </p>
           </li>
           <li>
-            <svg width="35" height="35">
-              <use xlink:href="img/sprite_auto.svg#privacy"></use>
+            <div>
+              <svg width="35" height="35">
+                <use xlink:href="img/sprite_auto.svg#privacy"></use>
+              </svg>
               <span class="visually-hidden">Конфиденциальность</span>
-            </svg>
+            </div>
             <h2>Полная конфиденциальность</h2>
             <p>По желанию клиента мы обеспечиваем полную конфеденциальность.
             </p>
           </li>
           <li>
-            <svg width="35" height="35">
-              <use xlink:href="img/sprite_auto.svg#price"></use>
+            <div>
+              <svg width="35" height="35">
+                <use xlink:href="img/sprite_auto.svg#price"></use>
+              </svg>
               <span class="visually-hidden">Ценник</span>
-            </svg>
+            </div>
             <h2>Персонализация стоимости</h2>
             <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
               устраивает.
@@ -144,7 +151,7 @@
           <div class="product__cards">
             <ul>
               <li>
-                <a href="">
+                <a href="#">
                   <h3>Производство печатных плат</h3>
                   <span>
                     <svg width="5" height="10">
@@ -154,7 +161,7 @@
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="#">
                   <h3>Монтаж печатных плат</h3>
                   <span>
                     <svg width="5" height="10">
@@ -164,7 +171,7 @@
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="#">
                   <h3>Комплектующие для светотехники</h3>
                   <span>
                     <svg width="5" height="10">
@@ -189,27 +196,30 @@
               <img src="img/paper-airplane@1x.png" srcset="img/paper-airplane@2x.png" alt="Бумажный самолёт" width="510"
                 height="285">
             </picture>
-            <form class="feedback__form" method="get" action="https://echo.htmlacademy.ru">
+            <form class="feedback__form form" method="get" action="https://echo.htmlacademy.ru">
               <h2>Остались вопросы? Задайте их нам!</h2>
               <p>Мы проконсультируем Вас бесплатно</p>
               <ul>
                 <li>
                   <label>
+                    <span class="visually-hidden">Имя</span>
                     <input type="text" name="name" placeholder="Имя" autocomplete="off" required>
                   </label>
                 </li>
                 <li>
                   <label>
+                    <span class="visually-hidden">Телефон</span>
                     <input type="tel" name="phone" placeholder="Телефон" autocomplete="off" maxlength="18" required>
                   </label>
                 </li>
                 <li>
                   <label>
+                    <span class="visually-hidden">Ваш вопрос</span>
                     <textarea name="question" placeholder="Ваш вопрос"></textarea>
                   </label>
                 </li>
               </ul>
-              <div class="feedback__form-wrapper">
+              <div class="form-wrapper">
                 <button type="submit">Задать вопрос</button>
                 <label>
                   <input type="checkbox" name="personal-data" required>
@@ -225,16 +235,12 @@
       <div class="footer__container container">
         <div class="footer__wrapper">
           <div class="footer__logo logo logo--footer">
-            <a class="logo__link" href="">
+            <a class="logo__link" href="#">
               <div class="logo__wrapper">
-                <svg width="55" height="55">
+                <svg width="215" height="55">
                   <use xlink:href="img/sprite_auto.svg#identic"></use>
-                  <span class="visually-hidden">Логотип Smart Device</span>
                 </svg>
-                <div class="logo__text">
-                  <span class="logo__title">Smart Device</span>
-                  <span class="logo__description">умные технологии</span>
-                </div>
+                <span class="visually-hidden">Логотип Smart Device</span>
               </div>
             </a>
           </div>
@@ -244,24 +250,24 @@
                 <a class="social-network__link" href="#">
                   <svg width="30" height="30">
                     <use xlink:href="img/sprite_auto.svg#pinterest"></use>
-                    <span class="visually-hidden">Pinterest</span>
                   </svg>
+                  <span class="visually-hidden">Pinterest</span>
                 </a>
               </li>
               <li class="social-network__item">
                 <a class="social-network__link" href="#">
                   <svg width="30" height="30">
                     <use xlink:href="img/sprite_auto.svg#ok"></use>
-                    <span class="visually-hidden">Мы в Одноклассниках</span>
                   </svg>
+                  <span class="visually-hidden">Мы в Одноклассниках</span>
                 </a>
               </li>
               <li class="social-network__item">
                 <a class="social-network__link" href="#">
                   <svg width="30" height="30">
                     <use xlink:href="img/sprite_auto.svg#vk"></use>
-                    <span class="visually-hidden">Мы во Вконтакте</span>
                   </svg>
+                  <span class="visually-hidden">Мы во Вконтакте</span>
                 </a>
               </li>
             </ul>
@@ -272,32 +278,32 @@
           <div class="nav__wrapper nav__wrapper--js-none">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="">О Компаниии</a>
+                <a class="nav__link" href="#">О Компаниии</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="">Продукты</a>
+                <a class="nav__link" href="#">Продукты</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="">Производство печатных плат</a>
+                <a class="nav__link" href="#">Производство печатных плат</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="">Монтаж печатных плат</a>
+                <a class="nav__link" href="#">Монтаж печатных плат</a>
               </li>
             </ul>
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="">Комплектующие</a>
+                <a class="nav__link" href="#">Комплектующие</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="">Доставка</a>
+                <a class="nav__link" href="#">Доставка</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="">Контакты</a>
+                <a class="nav__link" href="#">Контакты</a>
               </li>
             </ul>
           </div>
           <button class="nav__btn-show-more  nav__btn-show-more--is-close nav__btn-show-more--js-none"
-            type="button"></button>
+            type="button"><span class="visually-hidden">Раскрыть список</span></button>
         </nav>
         <div class="footer__footer-contacts footer-contacts">
           <h3 class="footer-contacts__title">Наш офис</h3>
@@ -320,7 +326,7 @@
           </ul>
           <button
             class="footer-contacts__btn-show-more footer-contacts__btn-show-more--is-close footer-contacts__btn-show-more--js-none"
-            type="button"></button>
+            type="button"><span class="visually-hidden">Раскрыть список</span></button>
         </div>
       </div>
     </footer>
@@ -330,28 +336,31 @@
     <div class="popup__wrapper">
       <div class="popup__overlay"></div>
       <div class="popup__content">
-        <button class="popup__close-btn" type="button"></button>
-        <form class="popup__form" method="get" action="https://echo.htmlacademy.ru">
-          <h2>Закажите звонок!</h2>
-          <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <button class="popup__close-btn" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+        <form class="popup__form form form--popup" method="get" action="https://echo.htmlacademy.ru">
+          <h2>Закажите звонок</h2>
+          <p>Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
           <ul>
             <li>
               <label>
+                <span class="visually-hidden">Имя</span>
                 <input type="text" name="name" placeholder="Имя" autocomplete="off" required>
               </label>
             </li>
             <li>
               <label>
-                <input input type="tel" name="phone" placeholder="Телефон" autocomplete="off" maxlength="18" required>
+                <span class="visually-hidden">Телефон</span>
+                <input type="tel" name="phone" placeholder="Телефон" autocomplete="off" maxlength="18" required>
               </label>
             </li>
             <li>
               <label>
+                <span class="visually-hidden">Ваш вопров</span>
                 <textarea name="question" placeholder="Ваш вопрос"></textarea>
               </label>
             </li>
           </ul>
-          <div class="popup__form-wrapper">
+          <div class="form-wrapper">
             <button type="submit">Отправить</button>
             <label>
               <input type="checkbox" name="personal-data" required>

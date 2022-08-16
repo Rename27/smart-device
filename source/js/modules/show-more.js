@@ -20,23 +20,28 @@ aboutBtnShowMore.style.display = 'block';
 const navContainerClose = () => {
   navBtnShowMore.classList.remove('nav__btn-show-more--is-open');
   navBtnShowMore.classList.add('nav__btn-show-more--is-close');
-  navContainer.style.display = 'none';
+  navContainer.classList.add('nav__wrapper--is-close');
+  navContainer.classList.remove('nav__wrapper--is-open');
+
 };
 const navContainerOpen = () => {
   navBtnShowMore.classList.remove('nav__btn-show-more--is-close');
   navBtnShowMore.classList.add('nav__btn-show-more--is-open');
-  navContainer.style.display = 'block';
+  navContainer.classList.remove('nav__wrapper--is-close');
+  navContainer.classList.add('nav__wrapper--is-open');
 };
 
 const footerContainerClose = () => {
   footerContactsBtnShowMore.classList.remove('footer-contacts__btn-show-more--is-open');
   footerContactsBtnShowMore.classList.add('footer-contacts__btn-show-more--is-close');
-  footerContactsContainer.style.display = 'none';
+  footerContactsContainer.classList.add('footer-contacts__list--is-close');
+  footerContactsContainer.classList.remove('footer-contacts__list--is-open');
 };
 const footerContainerOpen = () => {
   footerContactsBtnShowMore.classList.remove('footer-contacts__btn-show-more--is-close');
   footerContactsBtnShowMore.classList.add('footer-contacts__btn-show-more--is-open');
-  footerContactsContainer.style.display = 'block';
+  footerContactsContainer.classList.remove('footer-contacts__list--is-close');
+  footerContactsContainer.classList.add('footer-contacts__list--is-open');
 };
 
 const navShowMore = () => {
