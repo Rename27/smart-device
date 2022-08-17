@@ -2,17 +2,20 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const navBtnShowMore = document.querySelector('.nav__btn-show-more');
   const navContainer = document.querySelector('.nav__wrapper');
-  if (navBtnShowMore.classList.contains('nav__btn-show-more--js-none')) {
-    navBtnShowMore.classList.remove('nav__btn-show-more--js-none');
-    navContainer.classList.remove('nav__wrapper--js-none');
+  if (navBtnShowMore) {
+    if (navBtnShowMore.classList.contains('nav__btn-show-more--js-none')) {
+      navBtnShowMore.classList.remove('nav__btn-show-more--js-none');
+      navContainer.classList.remove('nav__wrapper--js-none');
+    }
   }
-
 
   const footerContactsBtnShowMore = document.querySelector('.footer-contacts__btn-show-more');
   const footerContactsContainer = document.querySelector('.footer-contacts__list');
-  if (footerContactsBtnShowMore.classList.contains('footer-contacts__btn-show-more--js-none')) {
-    footerContactsBtnShowMore.classList.remove('footer-contacts__btn-show-more--js-none');
-    footerContactsContainer.classList.remove('footer-contacts__list--js-none');
+  if (footerContactsBtnShowMore) {
+    if (footerContactsBtnShowMore.classList.contains('footer-contacts__btn-show-more--js-none')) {
+      footerContactsBtnShowMore.classList.remove('footer-contacts__btn-show-more--js-none');
+      footerContactsContainer.classList.remove('footer-contacts__list--js-none');
+    }
   }
 
 
@@ -82,7 +85,13 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  navBtnShowMore.addEventListener('click', navShowMore);
-  footerContactsBtnShowMore.addEventListener('click', footerContactsShowMore);
-  aboutBtnShowMore.addEventListener('click', aboutDescriptionShowMore);
+  if (navBtnShowMore) {
+    navBtnShowMore.addEventListener('click', navShowMore);
+  }
+  if (footerContactsBtnShowMore) {
+    footerContactsBtnShowMore.addEventListener('click', footerContactsShowMore);
+  }
+  if (aboutBtnShowMore) {
+    aboutBtnShowMore.addEventListener('click', aboutDescriptionShowMore);
+  }
 });
