@@ -127,7 +127,7 @@
   }
 }
 
-.form-wrapper {
+.form__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
@@ -147,7 +147,7 @@
   }
 }
 
-.form-wrapper button {
+.form__wrapper button {
   padding: 15px 0;
   max-width: 265px;
   font-size: 16px;
@@ -179,7 +179,7 @@
   }
 }
 
-.form-wrapper label {
+.form__wrapper label {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -195,7 +195,7 @@
   }
 }
 
-.form-wrapper input {
+.form__wrapper input {
   position: relative;
   flex-shrink: 0;
   padding: 0;
@@ -233,7 +233,7 @@
   }
 }
 
-.form-wrapper span {
+.form__wrapper span {
   max-width: 200px;
   font-family: $ff-alternative;
   font-size: 14px;
@@ -275,27 +275,27 @@
     margin: 0 0 15px;
   }
 
-  .form-wrapper {
+  .form__wrapper {
     padding: 0;
     grid-template-columns: none;
     justify-content: stretch;
     row-gap: 16px;
   }
 
-  .form-wrapper button {
+  .form__wrapper button {
     width: auto;
     max-width: none;
   }
 
-  .form-wrapper label {
+  .form__wrapper label {
     padding: 0 0 0 8px;
   }
 
-  .form-wrapper input {
+  .form__wrapper input {
     flex-shrink: 1;
   }
 
-  .form-wrapper span {
+  .form__wrapper span {
     gap: 3px;
     max-width: none;
   }
