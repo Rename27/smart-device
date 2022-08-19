@@ -24,6 +24,8 @@
 
 .feedback picture,
 .feedback img {
+  flex-shrink: 1;
+  margin-top: 10px;
   align-self: center;
 
   @include vp-1023 {
@@ -32,10 +34,12 @@
 }
 
 .feedback__wrapper img {
-  height: 285px;
+  height: auto;
+  max-height: 285px;
 }
 
 .feedback__form {
+  flex-shrink: 0;
   width: 585px;
 
   @include vp-1023 {
@@ -198,6 +202,7 @@
   cursor: pointer;
 
   @include vp-767 {
+    grid-row: 1/2;
     max-width: none;
   }
 
@@ -226,6 +231,7 @@
   }
 
   @include vp-767 {
+    grid-row: 2/3;
     justify-self: stretch;
     margin: 0 0 0 5px;
   }

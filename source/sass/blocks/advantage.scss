@@ -15,7 +15,7 @@
 
 .advantages__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 595px);
+  grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
   justify-content: center;
   gap: 30px;
   margin: 0;
@@ -23,11 +23,11 @@
   list-style-type: none;
 
   @include vp-1023 {
-    grid-template-columns: repeat(auto-fill, 320px);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   }
 
   @include vp-767 {
-    grid-template-columns: repeat(auto-fill, 270px);
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   }
 }
 
@@ -44,6 +44,12 @@
   @include vp-767 {
     min-height: 340px;
     padding: 30px 25px 30px;
+
+    &:nth-child(3n),
+    &:nth-child(4n) {
+      min-height: initial;
+      height: 325px;
+    }
   }
 
   &:hover {
@@ -63,18 +69,22 @@
   }
 }
 
+.advantages div {
+  max-height: 35px;
+  margin: 0 0 15px;
+
+  @include vp-767 {
+    margin: 0 0 20px;
+    max-height: 30px;
+  }
+}
 
 .advantages svg {
-  margin: 0 0 13px;
   fill: $color-deep-sky-blue;
 
-  @include vp-1023 {
-    margin: 0 0 8px;
-
-    @include vp-767 {
-      width: 30px;
-      height: 30px;
-    }
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -86,7 +96,7 @@
   color: $color-deep-sky-blue;
 
   @include vp-1023 {
-    margin: 0 0 8px;
+    margin: 0 0 10px;
   }
 
   @include vp-767 {
@@ -101,6 +111,7 @@
   line-height: 22px;
 
   @include vp-767 {
+    min-width: 202px;
     font-size: 14px;
     line-height: 19px;
   }

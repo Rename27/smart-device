@@ -1,6 +1,7 @@
 window.addEventListener('load', () => {
 
   const pageBody = document.querySelector('body');
+  const pageContent = pageBody.querySelector('.wrapper');
   const openBtn = pageBody.querySelector('.back-call__button');
   const popup = pageBody.querySelector('.popup');
   const popupOverlay = popup.querySelector('.popup__overlay');
@@ -11,13 +12,13 @@ window.addEventListener('load', () => {
   const closePopup = () => {
     popup.classList.remove('popup--is-active');
     pageBody.style.overflow = ('auto');
-
+    pageContent.removeAttribute('inert', 'true');
   };
-
 
   const openPopup = () => {
     popup.classList.add('popup--is-active');
     focusedInput.focus();
+    pageContent.setAttribute('inert', 'true');
     pageBody.style.overflow = ('hidden');
   };
 

@@ -47,23 +47,24 @@
 }
 
 .product ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
   column-gap: 85px;
   row-gap: 15px;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
   justify-content: center;
 
   @include vp-1023 {
+    display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: initial;
   }
 }
 
 .product li {
-  width: 350px;
+  max-width: 350px;
   height: 650px;
   background-image: linear-gradient(180deg, rgba($color-default-black, 0.5), rgba($color-default-black, 0.5)), url("../img/board@1x.jpg");
   background-size: 420%;
@@ -86,9 +87,14 @@
   }
 
   @include vp-1023 {
-    width: 100%;
+    max-width: none;
     max-height: 250px;
     background-size: 225%;
+    margin: 0 0 30px;
+
+    &:last-child {
+      margin: 0;
+    }
 
     &:nth-child(3n+1) {
       background-position: 29% 87%;
@@ -144,7 +150,7 @@
 .product h3 {
   margin: 0;
   padding: 50px 0 0 40px;
-  max-width: 210px;
+  max-width: 193px;
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;

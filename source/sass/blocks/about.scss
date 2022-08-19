@@ -13,7 +13,7 @@
 
   @include vp-767 {
     padding-top: 25px;
-    padding-bottom: 80px;
+    padding-bottom: 73px;
   }
 }
 
@@ -69,7 +69,7 @@
     font-size: 14px;
     line-height: 19px;
 
-    span {
+    & span {
       display: none;
     }
   }
