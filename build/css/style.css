@@ -1199,6 +1199,10 @@ button,
   display: block;
 }
 
+.about p:nth-child(2n) {
+  margin: 0 0 11px;
+}
+
 .about p span {
   display: block;
 }
@@ -1960,7 +1964,7 @@ button,
     min-height: 40px;
   }
 
-  .contacts__link span {
+  .contacts__link span:first-of-type {
     display: none;
   }
 
@@ -2553,7 +2557,7 @@ button,
 
   .about {
     padding-top: 25px;
-    padding-bottom: 73px;
+    padding-bottom: 80px;
   }
 
   .about picture,
