@@ -7,19 +7,27 @@ window.addEventListener('load', () => {
   const popupOverlay = popup.querySelector('.popup__overlay');
   const closeBtn = popup.querySelector('.popup__close-btn');
   const focusedInput = popup.querySelector('.popup__form input[name="name"]');
+  const popupSubmitBtn = popup.querySelector('.popup__form button');
 
 
   const closePopup = () => {
     popup.classList.remove('popup--is-active');
     pageBody.style.overflow = ('auto');
-    pageContent.removeAttribute('inert', 'true');
   };
 
   const openPopup = () => {
     popup.classList.add('popup--is-active');
     focusedInput.focus();
-    pageContent.setAttribute('inert', 'true');
     pageBody.style.overflow = ('hidden');
+
+    closeBtn.addEventListener('focus', function () {
+      closeBtn.setAttribute('tabindex', '1');
+    });
+    closeBtn.addEventListener('blur', function () {
+      closeBtn.setAttribute('tabindex', '6');
+    });
+
+    closeBtn.addEventListener('click', closePopup);
   };
 
 
@@ -36,8 +44,6 @@ window.addEventListener('load', () => {
     }
   };
 
-
-  closeBtn.addEventListener('click', closePopup);
   openBtn.addEventListener('click', openPopup);
   popupOverlay.addEventListener('click', onOverlayClick);
   document.addEventListener('keydown', onEsc);

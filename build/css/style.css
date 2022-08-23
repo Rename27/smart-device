@@ -1331,7 +1331,7 @@ button,
   opacity: 0.4;
 }
 
-.product h3 {
+.product h2 {
   margin: 0;
   padding: 50px 0 0 40px;
   max-width: 193px;
@@ -2127,7 +2127,7 @@ button,
     background-position: 18% 60%;
   }
 
-  .product h3 {
+  .product h2 {
     padding: 40px 0 0 45px;
   }
 
@@ -2620,7 +2620,7 @@ button,
     background-position: 72% 65%;
   }
 
-  .product h3 {
+  .product h2 {
     padding: 25px 0 0 30px;
     width: 163px;
     font-size: 18px;
