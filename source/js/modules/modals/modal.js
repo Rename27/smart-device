@@ -1,13 +1,11 @@
 window.addEventListener('load', () => {
 
   const pageBody = document.querySelector('body');
-  const pageContent = pageBody.querySelector('.wrapper');
   const openBtn = pageBody.querySelector('.back-call__button');
   const popup = pageBody.querySelector('.popup');
   const popupOverlay = popup.querySelector('.popup__overlay');
   const closeBtn = popup.querySelector('.popup__close-btn');
   const focusedInput = popup.querySelector('.popup__form input[name="name"]');
-  const popupSubmitBtn = popup.querySelector('.popup__form button');
 
 
   const closePopup = () => {
