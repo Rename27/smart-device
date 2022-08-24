@@ -46,3 +46,4 @@ window.addEventListener('load', () => {
   popupOverlay.addEventListener('click', onOverlayClick);
   document.addEventListener('keydown', onEsc);
 });
+
